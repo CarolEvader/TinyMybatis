@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mapper namespace="car">
+    <insert id="insertCar">
+        insert into t_car(id,car_num,brand,guide_price,produce_time,car_type) values(null,#{carNum},#{brand},#{guidePrice},#{produceTime},#{carType})
+    </insert>
+    <select id="selectCarByCarNum" resultType="com.nwu.mybatis.pojo.Car">
+        select id,car_num carNum,brand,guide_price guidePrice,produce_time produceTime,car_type carType from t_car where car_num = #{carNum}
+    </select>
+</mapper>

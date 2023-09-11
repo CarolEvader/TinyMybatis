@@ -1,0 +1,8 @@
+SqlSessionFactoryBuilder.class
+RemybatisJDBCTransaction.class
+ReMappedStatement.class
+SqlSession.class
+MyDataSource.class
+SqlSessionFactory.class
+TransactionManager.class
+Resources.class
